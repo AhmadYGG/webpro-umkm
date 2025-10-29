@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kontak Kami</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .form-container {
+      max-width: 1200px;
+      margin: 40px auto;
+      background: #fff;
+      padding: 25px;
+      border-radius: 12px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    label {
+      margin-top: 12px;
+      font-size: 14px;
+      font-weight: bold;
+    }
+
+    input,
+    textarea {
+      width: 100%;
+      padding: 8px;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+      margin-top: 5px;
+    }
+
+    .save-btn {
+      margin-top: 15px;
+      background-color: #cb997e;
+      color: #fff;
+      border: none;
+      padding: 10px 16px;
+      border-radius: 8px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    .save-btn:hover {
+      background-color: #b08968;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>Wadah UMKM Blitar</h1>
+    <p>Menumbuhkan Ekonomi Lokal, Satu Produk Satu Cerita</p>
+  </header>
+  <div class="navbar">
+    <ul>
+      <li><a href="index.html">Beranda</a></li>
+      <li><a href="daftarUmkm.php">Daftar UMKM</a></li>
+      <li><a href="artikel.html">Artikel</a></li>
+      <li><a href="berita.html">Berita</a></li>
+      <li><a href="tentangKami.html">Tentang Kami</a></li>
+      <li><a href="biodata.html">Biodata</a></li>
+      <li><a href="kontakKami.html">Kontak</a></li>
+      <li><a href="kisahSukses.html">Kisah Sukses</a></li>
+    </ul>
+  </div>
+  <div class="main-content fade-in visible">
+    <h2 style="text-align:center; font-size: 2em; margin-bottom: 25px;">Kontak Kami</h2>
+    <div class="form-container">
+      <form action="mailto:vantticacorp@gmail.com" method="post" enctype="text/plain">
+          <tr>
+            <td width="35%">
+              <b>Jenis Permintaan:</b><br>
+              <select name="Jenis Permintaan" style="width:100%; padding:6px;">
+                <option>Pertanyaan Umum</option>
+                <option>Pemesanan Produk</option>
+                <option>Kerja Sama</option>
+                <option>Daftar UMKM</option>
+                <option>Masukan / Saran</option>
+              </select>
+            </td>
+            <td width="65%">
+              <b>UMKM (opsional):</b><br>
+              <select name="UMKM" style="width:100%; padding:6px;">
+                <option>-- Pilih UMKM (jika ada) --</option>
+                <option>Jarkasi Jenang 1983</option>
+                <option>Omah Maheswari</option>
+                <option>Omah Jenang Blitar</option>
+                <option>Omah Brownies</option>
+                <option>Lapis Kukus Blitar</option>
+                <option>Omah Belut</option>
+                <option>Batik Selo Putri</option>
+                <option>Omah Gerabah</option>
+                <option>Kendang Jimbe</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2">
+              <b>Nama Anda:</b><br>
+              <input type="text" name="Nama" style="width:100%; padding:8px;" required>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <b>Email:</b><br>
+              <input type="email" name="Email" style="width:100%; padding:8px;" required>
+            </td>
+            <td>
+              <b>No. Telp / WA:</b><br>
+              <input type="tel" name="Telepon" style="width:100%; padding:8px;">
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2">
+              <b>Pesan Anda:</b><br>
+              <textarea name="Pesan" rows="6" style="width:100%; padding:8px;" required></textarea>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2" align="right">
+              <button type="submit" class="save-btn">Kirim Pesan</button>
+              <button type="reset" class="save-btn" style="background-color:#6c757d; margin-left:10px">Reset</button>
+            </td>
+          </tr>
+      </form>
+    </div>
+  </div>
+  <footer class="footer">
+    <div class="footer-container">
+        <p>
+          <center>“Blitar Berdaya, UMKM Berkembang — Satu Produk, Satu Cerita, Satu Kebanggaan.”</center>
+        </p>
+    </div>
+
+    <div class="footer-bottom">
+      &copy; 2025 Wadah UMKM Blitar.  All Rights Reserved.
+    </div>
+  </footer>
+</body>
+</html>
